@@ -216,3 +216,29 @@ body {
   }
 }
 
+/* style dla ekranów mniejszych niż 768px (telefony i tablety) */
+@media (max-width: 768px) {
+
+  /* karty funkcji i cennika w jednej kolumnie */
+  .features-grid,
+  .pricing-grid {
+    grid-template-columns: 1fr; /* jedna kolumna zamiast kilku */
+  }
+
+  /* mniejszy nagłówek na telefonie */
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  /* menu i logo jedno pod drugim */
+  .site-header {
+    flex-direction: column; /* logo nad menu */
+    gap: 10px;
+    padding: 15px 20px;
+  }
+
+  /* menu z mniejszymi odstępami */
+  .main-nav ul {
+    gap: 10px;
+  }
+}
