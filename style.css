@@ -1,0 +1,167 @@
+
+/* reset - domyślne marginesy i paddingi przeglądarki */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* żeby padding nie powiększał elementów */
+}
+
+/* podstawowe ustawienia dla całej strony */
+body {
+  font-family: Arial, sans-serif; /* czcionka dla całej strony */
+  background: #f4f4f4; /* szare tło */
+  color: #2c3e50; /* ciemny kolor tekstu */
+}
+
+/* nagłówek strony - logo po lewej, menu po prawej */
+.site-header {
+  display: flex; /* ustawiam logo i menu obok siebie */
+  justify-content: space-between; /* logo po lewej, menu po prawej */
+  align-items: center; /* wyrównuję w pionie do środka */
+  padding: 15px 40px; /* odstępy wewnętrzne */
+  background: #fff; /* białe tło nagłówka */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* lekki cień pod nagłówkiem */
+  position: sticky; /* nagłówek przyklejony do góry przy scrollowaniu */
+  top: 0;
+  z-index: 100; /* nagłówek zawsze na wierzchu */
+}
+
+/* logo sklepu */
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* menu nawigacyjne */
+.main-nav ul {
+  display: flex; /* elementy menu obok siebie */
+  gap: 20px; /* odstępy między elementami */
+  list-style: none; /* usuwam kropki */
+}
+
+/* linki w menu */
+.main-nav ul li a {
+  text-decoration: none; /* usuwam podkreślenie */
+  color: #2c3e50;
+  font-size: 1rem;
+  padding: 5px;
+  transition: color 0.3s; /* płynna zmiana koloru */
+}
+
+/* sekcja hero - główny baner */
+.hero {
+  padding: 80px 20px; /* duże odstępy wewnętrzne */
+  text-align: center; /* wyśrodkowuję tekst */
+  background: linear-gradient(135deg, #3498db, #9b59b6); /* gradient niebiesko-fioletowy */
+  color: #fff; /* biały tekst */
+}
+
+.hero h1 {
+  font-size: 2.5rem; /* duży tytuł */
+  margin-bottom: 15px; /* odstęp pod tytułem */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* przycisk główny */
+.btn-primary {
+  background: #e67e22; /* pomarańczowy kolor przycisku */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px; /* zaokrąglone rogi */
+  text-decoration: none; /* usuwam podkreślenie bo to link */
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1rem;
+  transition: transform 0.2s; /* płynna animacja przy hover */
+}
+
+/* sekcja funkcji */
+.features {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* siatka 3 kolumny dla kart funkcji */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 równe kolumny */
+  gap: 20px; /* odstępy między kartami */
+  max-width: 900px; /* maksymalna szerokość siatki */
+  margin: 0 auto; /* wyśrodkowuję siatkę */
+}
+
+/* sekcja cennik */
+.pricing {
+  padding: 60px 20px;
+  text-align: center;
+  background: #ecf0f1; /* jasnoszare tło żeby odróżnić od reszty */
+}
+
+.pricing h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* siatka 2 kolumny dla cennika */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 równe kolumny */
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* karta cennika */
+.pricing-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  transition: transform 0.3s; /* płynna animacja */
+}
+
+/* wyróżniona karta cennika */
+.pricing-card.highlight {
+  border-color: #3498db; /* niebieska ramka dla wyróżnionej karty */
+  background: #eaf2f8; /* jasnoniebieskie tło */
+}
+
+.pricing-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.pricing-card p {
+  font-size: 1.3rem;
+  color: #333;
+}
+
+/* sekcja kontakt */
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* stopka */
+.site-footer {
+  background: #2c3e50; /* ciemne tło */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
