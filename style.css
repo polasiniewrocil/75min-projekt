@@ -165,3 +165,54 @@ body {
   padding: 20px;
   font-size: 0.9rem;
 }
+
+/* hover na linkach w menu - zmiana koloru po najechaniu */
+.main-nav ul li a:hover {
+  color: #3498db; /* niebieski po najechaniu */
+}
+
+/* hover na przycisku - przesuwa się do góry */
+.btn-primary:hover {
+  transform: translateY(-3px); /* przycisk unosi się o 3px */
+}
+
+/* karta funkcji z animacją wejścia */
+.feature-card {
+  background: #fff; /* białe tło karty */
+  padding: 20px;
+  border-radius: 6px; /* zaokrąglone rogi */
+  transition: 0.3s; /* płynne przejście przy hover */
+  /* animacja fade-in - karta pojawia się z dołu */
+  opacity: 0; /* na początku niewidoczna */
+  transform: translateY(10px); /* przesunięta trochę w dół */
+  animation: fadeInUp 0.5s forwards; /* uruchamiam animację */
+}
+
+/* opóźnienie animacji dla drugiej i trzeciej karty */
+.feature-card:nth-child(2) {
+  animation-delay: 0.2s; /* druga karta pojawia się z opóźnieniem */
+}
+
+.feature-card:nth-child(3) {
+  animation-delay: 0.4s; /* trzecia karta jeszcze później */
+}
+
+/* hover na kartach - unoszą się i dostają cień */
+.feature-card:hover {
+  transform: translateY(-5px); /* karta unosi się o 5px */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* cień pod kartą */
+}
+
+/* hover na kartach cennika */
+.pricing-card:hover {
+  transform: translateY(-5px); /* karta unosi się o 5px */
+}
+
+/* definicja animacji fade-in */
+@keyframes fadeInUp {
+  to {
+    opacity: 1; /* karta staje się widoczna */
+    transform: translateY(0); /* wraca na swoją pozycję */
+  }
+}
+
