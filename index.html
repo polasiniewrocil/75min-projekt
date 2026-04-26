@@ -12,7 +12,75 @@
 </head>
 <body>
 
- 60584
+  <!-- nagłówek strony z logo i menu -->
+  <header class="site-header">
+    <div class="logo">Moja Marka</div>
+    <!-- menu nawigacyjne - linki prowadzą do sekcji na stronie -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#hero">Start</a></li>
+        <li><a href="#features">Funkcje</a></li>
+        <li><a href="#pricing">Cennik</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- sekcja hero - główny baner strony -->
+  <section id="hero" class="hero">
+    <h1>Dynamiczna strona w 75 minut</h1>
+    <p>Nowoczesny landing page w HTML i CSS.</p>
+    <!-- przycisk który przenosi do cennika -->
+    <a href="#pricing" class="btn-primary">Zobacz ofertę</a>
+  </section>
+
+  <!-- sekcja z kartami funkcji -->
+  <section id="features" class="features">
+    <h2>Dlaczego warto?</h2>
+    <!-- siatka z 3 kartami -->
+    <div class="features-grid">
+      <article class="feature-card">
+        <h3>Szybko</h3>
+        <p>Strona w godzinę.</p>
+      </article>
+      <article class="feature-card">
+        <h3>Nowocześnie</h3>
+        <p>Responsywny layout.</p>
+      </article>
+      <article class="feature-card">
+        <h3>Prosto</h3>
+        <p>Tylko HTML i CSS.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- sekcja z cenami -->
+  <section id="pricing" class="pricing">
+    <h2>Cennik</h2>
+    <!-- siatka z 2 kartami cennika -->
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <h3>Basic</h3>
+        <p>0 zł</p>
+      </div>
+      <!-- highlight oznacza wyróżnioną kartę -->
+      <div class="pricing-card highlight">
+        <h3>Pro</h3>
+        <p>49 zł</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- sekcja kontaktowa -->
+  <section id="contact" class="contact">
+    <h2>Kontakt</h2>
+    <p>Napisz: kontakt@mojamarka.pl</p>
+  </section>
+
+  <!-- stopka na dole strony -->
+  <footer class="site-footer">
+    <p>© 2026 Dynamiczna strona – Projekt studencki</p>
+  </footer>
 
 </body>
 </html>
